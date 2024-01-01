@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NY Times Most Popular Articles</title>
+</head>
+<body>
+    <h1>Most Popular Articles</h1>
+    <ul>
+        {% for index, article in enumerated_articles %}
+            <li><a href="/article/{{ index }}">{{ article.title }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
